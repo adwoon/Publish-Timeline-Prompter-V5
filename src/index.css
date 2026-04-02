@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-app-bg: #2D2B38;
+  --color-card-bg: #3D3B4A;
+  --color-accent: #E8B4B4;
+  --color-accent-hover: #D8A4A4;
+  --color-text-secondary: #A09EAD;
+}
+
+body {
+  @apply bg-app-bg text-white antialiased;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pill-button {
+  @apply px-6 py-2 rounded-full font-bold text-sm transition-all active:scale-95;
+}
+
+.card-rounded {
+  @apply rounded-[2.5rem];
+}
